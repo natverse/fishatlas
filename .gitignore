@@ -1,0 +1,10 @@
+Meta
+doc
+inst/doc
+*.rda
+*.rds
+*.swc
+*.nrrd
+packrat/lib*/
+.Rproj.user
+.Rhistory
