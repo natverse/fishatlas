@@ -1,0 +1,25 @@
+Package: fishatlas
+Type: Package
+Title: R client utilities for interacting with the MPI Fish Brain Atlas project
+Version: 0.1.0
+Authors@R: c(
+    person("Alexander", "Bates", email = "alexander.shakeel.bates@gmail.com", role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0002-1195-0445"))
+    )
+Description: Access to fishatlas.neuro.mpg.de, which hosts almost 2000 neurons and an annotated template brain for the larval zebrafish, Danio rerio.
+License: GPL-3
+LazyData: true
+Suggests: 
+    spelling,
+    knitr,
+    rmarkdown,
+    covr
+Depends: R (>= 2.10)
+Imports: httr, jsonlite, nat, curl, utils
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 6.1.1
+URL: https://github.com/natverse/fishatlas
+BugReports: https://github.com/natverse/fishatlas/issues
+VignetteBuilder: knitr
+
