@@ -5,6 +5,7 @@ inst/doc
 *.rds
 *.swc
 *.nrrd
+*.zip
 packrat/lib*/
 .Rproj.user
 .Rhistory
