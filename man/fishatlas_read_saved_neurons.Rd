@@ -45,12 +45,12 @@ spatial transform. All neurons from Kunst et al. 2019.
 fishatlas_download_neurons()
 
 ## Let's get all that sweet neuron data!
-zfishn = fishatlas_read_saved_neurons(side = "Original)
+zfishn = fishatlas_read_saved_neurons(side = "Original")
 plot3d(zfishn,soma = TRUE, lwd = 2)
 
 ## Hmm, but it would be better to have them all on the same side
 clear3d()
-zfishr = fishatlas_read_saved_neurons(side = "Right)
+zfishr = fishatlas_read_saved_neurons(side = "Right")
 plot3d(zfishr,soma = TRUE, lwd = 2, col = "red")
 
 ## Great! How does that compare with neurons all on the left?
