@@ -11,7 +11,7 @@ fishatlas_fetch <- function(path,
       httr::GET(url = file.path(fishatlas_url, path, fsep = "/"), ...)
     }else {
       httr::POST(url = file.path(fishatlas_url, path, fsep = "/"),
-                 body = body, config = fishatlas_login()$config, ...)
+                 body = body, ...)
     }
   httr::stop_for_status(req)
   if (parse.json) {

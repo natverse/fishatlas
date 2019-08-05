@@ -91,7 +91,7 @@ fishatlas_login <- function(conn = NULL, Cache = TRUE, Force = FALSE, ...){
         Host = "fishatlas.neuro.mpg.de",
         `X-CSRFToken` = conn$token,
         referer = "https://fishatlas.neuro.mpg.de/neurons/main_page",
-        `Content-Type` = "application/json;charset=UTF-8",
+        `Content-Type` = "application/json",
         Cookie = "_pk_ref.1.1cf2=%5B%22%22%2C%22%22%2C1551187271%2C%22https%3A%2F%2Fwww.google.com%2F%22%5D; _pk_ses.1.1cf2=*; fe_typo_user=e5430f0716d8b4ea832b472d43c24446; _pk_id.1.1cf2=0e630dfe08158ed8.1551187271.1.1559211329.1551187271.; __unam=76e417d-16929f75e90-a871227-2; csrftoken=JHjK0tWM2w3cYDfzmCOx4VvlxgEIcPLx"
       )
     )

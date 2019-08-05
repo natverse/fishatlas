@@ -45,7 +45,7 @@ fishatlas_download_neurons <- function(fishatlas_url = "https://fishatlas.neuro.
   }
   package.path.data = paste(save.path,"inst/exdata",sep="/")
   if(!dir.exists(package.path.data)){
-    dir.create(package.path.data)
+    dir.create(package.path.data, recursive = TRUE)
   }
   # download neurons
   urls=file.path(paste0(fishatlas_url,"/neurons/download/download_all_neurons_aligned"))
