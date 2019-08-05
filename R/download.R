@@ -1,4 +1,4 @@
-#' @title Download all registered neuron data from the Fish Brai Atlas project
+#' @title Download all registered neuron data from the Fish Brain Atlas project
 #'
 #' @description Download all neurons from the fishatlas.neuro.mpg.de.
 #' These will be stored as a 53.7 MB at the location of this package, at inst/exdata or a user
