@@ -16,9 +16,9 @@ knitr::opts_chunk$set(
 [![Travis build status](https://travis-ci.org/natverse/fishatlas.svg?branch=master)](https://travis-ci.org/natverse/fishatlas)
 [![Codecov test coverage](https://codecov.io/gh/natverse/fishatlas/branch/master/graph/badge.svg)](https://codecov.io/gh/natverse/fishatlas?branch=master)
 [![Docs](https://img.shields.io/badge/docs-100%25-brightgreen.svg)](http://jefferislab.github.io/fishatlas/reference/)
-<img align="right" width="300px" src="https://raw.githubusercontent.com/natverse/fishatlas/master/inst/images/hex-fishatlas.png">
+<img src="man/figures/logo.svg" align="right" height="139" />
 
-# A neuron-level atlas for the larval zebrafish brain
+# Fish Brain Atlas
 
 The goal of *fishatlas* is to provide R client utilities for interacting with the [Fish Brain Atlas Project](https://www.neuro.mpg.de/baier/connectome), which has [successfully](https://www.cell.com/neuron/pdfExtended/S0896-6273(19)30391-5) acquired and registered almost 2,000 neurons from the larval zebrafish into a standard, annotated template space. Using this R package in concert with the [natverse](https://github.com/natverse/natverse) ecosystem of neuroanatomy tools is highly recommended. The [project](https://www.neuro.mpg.de/baier/connectome) was conducted by the group of [Herwig Baier](https://scholar.google.de/citations?user=e80hnfEAAAAJ&hl=en) at the [MPI](https://www.mpg.de/en),  primarily  by [Michael Kunst](https://scholar.google.co.uk/citations?user=yMyxCfQAAAAJ&hl=en). The website was created by [Nawwar Mokayes](https://www.linkedin.com/in/nouwarmokayes/?originalSubdomain=de). The larval brain data has all been collected from fish at 6 days post-fertilisation.
 
@@ -102,6 +102,3 @@ citation(package = "fishatlas")
 
 **Bates AS** (2019). *fishatlas: R client utilities for interacting with the MPI Fish Brain Atlas project.* **R package** version 0.1.0. https://github.com/natverse/fishatlas
 
-<p align="center">
-  <img width="300px" src="https://raw.githubusercontent.com/natverse/fishatlas/master/inst/images/hex-natverse_logo.png"/>
-</p> 

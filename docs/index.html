@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="R client utilities for interacting with the MPI Fish Brain Atlas project">
-<meta property="og:description" content="Access to fishatlas.neuro.mpg.de, which hosts almost 2000 neurons and an annotated template brain for the larval zebrafish, Danio rerio.">
+<meta property="og:description" content="Access to the MPI Fish Brain Atlas project, which hosts almost 2000 neurons and an annotated template brain for the larval zebrafish, Danio rerio.">
+<meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -73,10 +74,10 @@
     
     
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<p><a href="https://natverse.github.io"><img src="https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6" alt="natverse"></a> <a href="https://travis-ci.org/natverse/fishatlas"><img src="https://travis-ci.org/natverse/fishatlas.svg?branch=master" alt="Travis build status"></a> <a href="https://codecov.io/gh/natverse/fishatlas?branch=master"><img src="https://codecov.io/gh/natverse/fishatlas/branch/master/graph/badge.svg" alt="Codecov test coverage"></a> <a href="http://jefferislab.github.io/fishatlas/reference/"><img src="https://img.shields.io/badge/docs-100%25-brightgreen.svg" alt="Docs"></a> <img align="right" width="300px" src="https://raw.githubusercontent.com/natverse/fishatlas/master/inst/images/hex-fishatlas.png"></p>
-<div id="a-neuron-level-atlas-for-the-larval-zebrafish-brain" class="section level1">
+<p><a href="https://natverse.github.io"><img src="https://img.shields.io/badge/natverse-Part%20of%20the%20natverse-a241b6" alt="natverse"></a> <a href="https://travis-ci.org/natverse/fishatlas"><img src="https://travis-ci.org/natverse/fishatlas.svg?branch=master" alt="Travis build status"></a> <a href="https://codecov.io/gh/natverse/fishatlas?branch=master"><img src="https://codecov.io/gh/natverse/fishatlas/branch/master/graph/badge.svg" alt="Codecov test coverage"></a> <a href="http://jefferislab.github.io/fishatlas/reference/"><img src="https://img.shields.io/badge/docs-100%25-brightgreen.svg" alt="Docs"></a> <img src="reference/figures/logo.svg" align="right" height="139"></p>
+<div id="fish-brain-atlas" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#a-neuron-level-atlas-for-the-larval-zebrafish-brain" class="anchor"></a>A neuron-level atlas for the larval zebrafish brain</h1></div>
+<a href="#fish-brain-atlas" class="anchor"></a>Fish Brain Atlas</h1></div>
 <p>The goal of <em>fishatlas</em> is to provide R client utilities for interacting with the <a href="https://www.neuro.mpg.de/baier/connectome">Fish Brain Atlas Project</a>, which has <a href="https://www.cell.com/neuron/pdfExtended/S0896-6273(19)30391-5">successfully</a> acquired and registered almost 2,000 neurons from the larval zebrafish into a standard, annotated template space. Using this R package in concert with the <a href="https://github.com/natverse/natverse">natverse</a> ecosystem of neuroanatomy tools is highly recommended. The <a href="https://www.neuro.mpg.de/baier/connectome">project</a> was conducted by the group of <a href="https://scholar.google.de/citations?user=e80hnfEAAAAJ&amp;hl=en">Herwig Baier</a> at the <a href="https://www.mpg.de/en">MPI</a>, primarily by <a href="https://scholar.google.co.uk/citations?user=yMyxCfQAAAAJ&amp;hl=en">Michael Kunst</a>. The website was created by <a href="https://www.linkedin.com/in/nouwarmokayes/?originalSubdomain=de">Nawwar Mokayes</a>. The larval brain data has all been collected from fish at 6 days post-fertilisation.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -147,8 +148,6 @@ zfishl =<span class="st"> </span><span class="kw"><a href="reference/fishatlas_r
 <p>This package was created by Alexander Shakeel Bates, while in the group of <a href="https://en.wikipedia.org/wiki/Gregory_Jefferis">Dr. Gregory Jefferis</a>. You can cite this package as:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span>(<span class="dt">package =</span> <span class="st">"fishatlas"</span>)</code></pre></div>
 <p><strong>Bates AS</strong> (2019). <em>fishatlas: R client utilities for interacting with the MPI Fish Brain Atlas project.</em> <strong>R package</strong> version 0.1.0. <a href="https://github.com/natverse/fishatlas" class="uri">https://github.com/natverse/fishatlas</a></p>
-<p align="center">
-<img width="300px" src="https://raw.githubusercontent.com/natverse/fishatlas/master/inst/images/hex-natverse_logo.png"></p>
 </div>
 </div>
   </div>

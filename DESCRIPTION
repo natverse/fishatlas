@@ -6,7 +6,7 @@ Authors@R: c(
     person("Alexander", "Bates", email = "alexander.shakeel.bates@gmail.com", role = c("aut", "cre"), 
     comment = c(ORCID = "0000-0002-1195-0445"))
     )
-Description: Access to fishatlas.neuro.mpg.de, which hosts almost 2000 neurons and an annotated template brain for the larval zebrafish, Danio rerio.
+Description: Access to the MPI Fish Brain Atlas project, which hosts almost 2000 neurons and an annotated template brain for the larval zebrafish, Danio rerio.
 License: GPL-3
 LazyData: true
 Suggests: 

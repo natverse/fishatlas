@@ -4,7 +4,7 @@
 \alias{fishatlas_download_neurons}
 \alias{fishatlas_read_saved_neurons}
 \alias{fishatlas_mirror_saved_neurons}
-\title{Download all registered neuron data from the Fish Brai Atlas project}
+\title{Download all registered neuron data from the Fish Brain Atlas project}
 \usage{
 
   fishatlas_download_neurons(fishatlas_url = "https://fishatlas.neuro.mpg.de",
